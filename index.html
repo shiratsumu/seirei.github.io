@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="output.css">
+	<title>seirei</title>
+</head>
+<style>
+	.tategaki {
+		-webkit-writing-mode: vertical-rl;
+  		-moz-writing-mode: vertical-rl;
+  		-ms-writing-mode: tb-rl;
+  		-ms-writing-mode: vertical-rl;
+  		writing-mode: vertical-rl;
+  		display: inline-block;
+  		height: 83ex;
+  		text-align: left;
+	}
+</style>
+<body>
+
+	<div style="background: rgb(218, 218, 125); width: 525px; height: 742px">
+		<div class="ml-115 text-2xl">
+			<span id="HR"></span><br>HR
+		</div>
+
+		<div id="mini"></div>
+
+		<div style="text-align: right;">
+			<div class="tategaki">
+				<div style="height: 40ex;">
+					<p id="main"></p>
+					<p id="main_middle"></p>
+					<p id="main_btm"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<button>3段レイアウト</button>
+		<button>2段レイアウト</button>
+	</div>
+
+	<div>
+		<input id="HR_area" placeholder="HR"></input>
+		<textarea id="mini_area" placeholder="ミニ文"></textarea>
+		<textarea id="main_area" placeholder="本文"></textarea>
+	</div>
+		
+	<button id="toPDF">PDFにする</button>
+</body>
+<script>
+{"use strict";
+	{
+
+		const HR = document.querySelector("#HR");
+		const mini = document.querySelector("#mini");
+		const main = document.querySelector("#main");
+
+
+		document.querySelector("#HR_area").addEventListener("input", (e) => {
+			HR.innerHTML = e.target.value;
+		});
+
+		document.querySelector("#mini_area").addEventListener("input", (e) => {
+			mini.innerHTML = e.target.value;
+		});
+
+		document.querySelector("#main_area").addEventListener("input", (e) => {
+			main.innerHTML = e.target.value;
+			console.log(e.target.value)
+		});
+	}
+
+	
+}
+</script>
+</html>
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
