@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+.text-2xl{font-size:1.5rem;line-height:2rem}.ml-115{margin-left:28.75rem}
+/*ヘッダー配置*/
+#ヘッダー{
+    margin: 50px 300px;
+}
+/*window背景色*/
+body{
+    background-color: rgb(193, 226, 255);
+}
+/*配置設定*/
+  #main1{
+    margin-left: 435px;
+    margin-top: 10px;
+  }
+
+  #HR{
+      z-index: 100;
+    top:10px; left: 50px;
+}
+/*block*/
+
+#template{
+          
+}
+/*form*/
+#formspace{
+    margin: 0px auto;
+}
+#HR_area{
+    width:2rem;
+}      
+#mini_area,#mini_area2,#main_area{
+    width:22rem;
+}
+#mini_area{
+    margin-left: 1px;
+    margin-top: 20px;
+    height: 20rem;
+    float: left;
+    margin-left: 50px;
+}
+#mini_area2{
+    margin-left: 1px;
+    margin-top: 20px;
+    height: 20rem;
+    float: left;
+}
+#main_area{
+    height: 43rem;
+    margin-right: 1px;
+    float: right;
+    margin-right: 50px;
+
+}
