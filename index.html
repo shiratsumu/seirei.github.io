@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="output.css">
+	<link rel="stylesheet" href="style.css"media="all">
 	<title>seirei</title>
 </head>
 <style>
@@ -19,9 +19,37 @@
   		text-align: left;
 	}
 </style>
+<section id="ヘッダー">
+ <h1>
+	蜻蛉打ち込み用Web
+ </h1>
+ <a>不具合等の連絡→seireicommittee@gmail.com</a>
+ <p>
+	レイアウト選択
+ </p>
+ <ul>
+	<li>HR紹介Ⅰ</li>
+	<li>HR紹介Ⅱ</li>
+	<li>行事用</li>
+	<li>委員会,部活用</li>
+	<li>自由レイアウト</li>
+ </ul>
+</section>
 <body>
-
-	<div style="background: rgb(218, 218, 125); width: 525px; height: 742px">
+	
+	<div style="background:rgb(248, 248, 248); 
+	            width: 526px; 
+				height: 743px;
+				border:1px solid #000000;
+				margin:100px auto;" 
+			id="template"
+	    >
+		
+	     <img src="Seivei.png"
+		 id="main1" 
+	     width="74"
+	     height="240" >
+	
 		<div class="ml-115 text-2xl">
 			<span id="HR"></span><br>HR
 		</div>
@@ -39,25 +67,31 @@
 		</div>
 	</div>
 
-	<div>
-		<button>3段レイアウト</button>
-		<button>2段レイアウト</button>
-	</div>
+</body>
+
+<h2 style="background:white; 
+           width: 1000px; 
+           height: 1000px;"
+	id="formspace">
+	
+
 
 	<div>
-		<input id="HR_area" placeholder="HR"></input>
-		<textarea id="mini_area" placeholder="ミニ文"></textarea>
+		<input id="HR_area" placeholder="HR"></input><br>
+		<textarea id="mini_area" placeholder="プロローグ"></textarea>
+		<textarea id="mini_area2" placeholder="エピローグ"></textarea>
 		<textarea id="main_area" placeholder="本文"></textarea>
 	</div>
 		
 	<button id="toPDF">PDFにする</button>
-</body>
+</h2>
 <script>
 {"use strict";
 	{
 
 		const HR = document.querySelector("#HR");
 		const mini = document.querySelector("#mini");
+		const mini2 = document.querySelector("#mini2");
 		const main = document.querySelector("#main");
 
 
@@ -67,6 +101,10 @@
 
 		document.querySelector("#mini_area").addEventListener("input", (e) => {
 			mini.innerHTML = e.target.value;
+		});
+
+		document.querySelector("#mini_area2").addEventListener("input", (e) => {
+			mini2.innerHTML = e.target.value;
 		});
 
 		document.querySelector("#main_area").addEventListener("input", (e) => {
