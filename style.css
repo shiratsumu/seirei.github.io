@@ -25,12 +25,12 @@ body{
 .text-2xl{
     font-size:1.5rem;
     letter-spacing: 0px;
-    line-height:2rem
+    line-height:2rem;
 }
     
 .ml-115{ 
     position: absolute;
-    top:27.4%; 
+    top:26.5%; 
     right: 50%;
     z-index: 100;
     
