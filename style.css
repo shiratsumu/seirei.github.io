@@ -1,4 +1,8 @@
 @charset "utf-8";
+/*文字変更禁止*/
+html{
+    -webkit-text-size-adjust: 100%;
+}
 
 /*ヘッダー配置*/
 #ヘッダー
@@ -26,8 +30,8 @@ body{
     
 .ml-115{ 
     position: absolute;
-    top:67.5px; 
-    right: 37px;
+    top:27.4%; 
+    right: 50%;
     z-index: 100;
     
 }
@@ -76,6 +80,10 @@ color:rgb(14, 15, 15);}
 }
 #toPDF{
     line-height: 1;
+    height:3rem;
+    width: 6rem;
     position:absolute;
-    left:900px;
+    left: 700px;
+    bottom:850px;
+    background-color: white;
 }
