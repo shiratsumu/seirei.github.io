@@ -13,26 +13,27 @@
   		-moz-writing-mode: vertical-rl;
   		-ms-writing-mode: tb-rl;
   		-ms-writing-mode: vertical-rl;
+	    text-orientation: upright;
   		writing-mode: vertical-rl;
   		display: inline-block;
-  		height: 83ex;
-  		text-align: left;
+  		text-align:right;
+		font-size: 75.3%;
+		
 	}
 </style>
 <section id="ヘッダー">
  <h1>
 	蜻蛉打ち込み用Web
  </h1>
- <a>不具合等の連絡→<p>seireicommittee@gmail.com</p></a>
+ <a>不具合等の連絡→<p><a href="mailto:seireicommittee@gmail.com">seireicommittee@gmail.com</a></p>
  <p>
-	レイアウト選択
- </p>
- <ul>
-	<li>HR紹介Ⅰ</li>
-	<li>HR紹介Ⅱ</li>
-	<li>行事用</li>
-	<li>委員会,部活用</li>
-	<li>自由レイアウト</li>
+	レイアウト選択</p>
+ <ul id=jamp></ul>
+	<li ><a href="layout/HR2.html">HR紹介Ⅰ</a></li>
+	<li ><a href="layout/HR2.html">HR紹介Ⅱ</a></li>
+	<li><a  href="layout/gyouzi.html">行事用</a></li>
+	<li><a href="layout/bukatsu.html">委員会,部活用</a></li>
+	<li><a href="layout/free.html">自由レイアウト</a></li>
  </ul>
 </section>
 <body>
@@ -41,7 +42,7 @@
 	            width: 526px; 
 				height: 743px;
 				border:1px solid #000000;
-				margin:auto auto;
+				margin:auto 25%;
 				margin-bottom: 50px;" 
 			id="template"
 	    >
@@ -60,7 +61,7 @@
 
 		<div style="text-align: right;">
 			<div class="tategaki">
-				<div style="height: 40ex;">
+				<div style="height: 42ex;">
 					<p id="main"></p>
 					<p id="main_middle"></p>
 					<p id="main_btm"></p>
@@ -72,14 +73,16 @@
 </body>
 
 <h2 style="background:rgb(245, 249, 253); 
-           width: 700px; 
-           height: 800px;"
+           width: 720px; 
+           height: 850px;"
 	id="formspace">
 	
 
 
 	<div>
 		<input id="HR_area" placeholder="HR"></input><br>
+		<input id="teacher_area" placeholder="担任"></input><br>
+		<input id="subteacher_area" placeholder="副担任"></input><br>
 		<textarea id="mini_area" placeholder="プロローグ"></textarea>
 		<textarea id="mini_area2" placeholder="エピローグ"></textarea>
 		<textarea id="main_area" placeholder="本文"></textarea>
@@ -92,6 +95,8 @@
 	{
 
 		const HR = document.querySelector("#HR");
+		const 担任 = document.querySelector("#担任");
+		const 副担任 = document.querySelector("#副担任");
 		const mini = document.querySelector("#mini");
 		const mini2 = document.querySelector("#mini2");
 		const main = document.querySelector("#main");
@@ -100,6 +105,15 @@
 		document.querySelector("#HR_area").addEventListener("input", (e) => {
 			HR.innerHTML = e.target.value;
 		});
+		
+		document.querySelector("#teacher_area").addEventListener("input", (e) => {
+			担任.innerHTML = e.target.value;
+		});
+		
+		document.querySelector("#subteacher_area").addEventListener("input", (e) => {
+			副担任.innerHTML = e.target.value;
+		});
+
 
 		document.querySelector("#mini_area").addEventListener("input", (e) => {
 			mini.innerHTML = e.target.value;

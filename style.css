@@ -3,10 +3,29 @@
 html{
     -webkit-text-size-adjust: 100%;
 }
-
+/*縦書き文字設定*/
+#main{
+    width: 40ex;
+    margin-top: 10%;
+    margin-right: 41%;
+    z-index: 50;
+    
+}
+#main_middle{
+    width: 0ex;
+    margin-bottom: ex;
+}
+.num {
+	-ms-text-combine-horizontal: all;
+	-webkit-text-combine: horizontal;
+	text-combine-upright: all;
+	line-height: 1;
+	vertical-align: baseline;
+}
 /*ヘッダー配置*/
 #ヘッダー
-h1{text-decoration:underline;}
+h1{text-decoration:underline;
+   margin: 10px 2px;}
 /*window背景色*/
 body{
     background-color: rgb(193, 226, 255);
@@ -17,8 +36,8 @@ body{
 }
 #title{
     position: absolute;
-    margin-left: 435px;
-    margin-top: 10px;
+    margin-left: 417px;
+    margin-top: 7%;
     z-index: 1;
   }
 
@@ -36,7 +55,10 @@ body{
     
 }
 /*ul*/
-a p,ul{text-decoration:underline;
+#jamp{
+    color-adjust: white;
+}
+a p,li{text-decoration:underline;
 color:rgb(14, 15, 15);}
 
 
@@ -53,27 +75,37 @@ color:rgb(14, 15, 15);}
 
     width:2rem;
 }      
+#teacher_area{
+    position: absolute;
+    left:50px;
+    top:50px;
+}
+#subteacher_area{
+    position:absolute;
+    left:230px;
+    top: 50px;
+}
 #mini_area,#mini_area2,#main_area{
     width: 18rem;
 }
 #mini_area{
     position:absolute;
-    margin-top: 20px;
+    margin-top: px;
     height: 20rem;
     float: left;
     margin-left: 50px;
 }
 #mini_area2{
     position:absolute;
-    margin-top: 25rem;
+    margin-top: 24rem;
     left:50px;
-    height: 20rem;
+    height: 19rem;
 
 }
 #main_area{
     position:absolute;
     height: 43rem;
-    top: 55.5px;
+    top: 108.5px;
     left:23rem;
     margin-right: 50px;
 
