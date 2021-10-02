@@ -106,23 +106,23 @@ color:rgb(14, 15, 15);}
 }      
 #teacher_area{
     position: absolute;
-    left:50px;
-    top:50px;
+    left:7%;
+    top:7%;
 }
 #subteacher_area{
     position:absolute;
-    left:230px;
-    top: 50px;
+    left:35%;
+    top: 7%;
 }
 #mini_area,#mini_area2,#main_area{
     width: 18rem;
 }
 #mini_area{
     position:absolute;
-    margin-top: px;
+    top: 15%;
     height: 20rem;
     float: left;
-    margin-left: 50px;
+    left: 7%;
 }
 #mini_area2{
     position:absolute;
