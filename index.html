@@ -16,7 +16,7 @@
 	    text-orientation: upright;
   		writing-mode: vertical-rl;
   		display: inline-block;
-		font-size: 75.3%;
+		font-size: 74%;
 	}
 </style>
 <section id="ヘッダー">
@@ -47,8 +47,8 @@
 		<div id="title">
 	     <img src="image/Seivei.png"
 		 id="main1" 
-	     width="74"
-	     height="240" >
+	     width="62px"
+	     height="192px" >
 		 <div class="ml-115 text-2xl">
 			<span id="HR"></span>
 		 </div> 
@@ -73,21 +73,36 @@
 		    class="tategaki"
 			style=height:15.5rem;>
 	    </div>
+		<div id="main2"
+		    class="tategaki"
+			style=height:15.5rem;>
+	    </div>
+		<div id="main2"
+		    class="tategaki"
+			style=height:15.5rem;>
+	    </div>
 
 
 	<button id="toPDF">PDFにする</button>
 
 
 
-	<div style="text-align: right;">
-			<div class="tategaki">
+	<div>
+		<div class="tategaki">
 				<div style="height: 17.5rem;">
 					<p id="main"></p>
-					<p id="main_middle"></p>
-					<p id="main_btm"></p>
 				</div>
-			</div>
 		</div>
+		<div class="tategaki">
+			<div style="height: 17.5rem;">				
+				<p id="main_middle"></p>				
+			</div>
+	    </div>
+		<div class="tategaki">
+			<div style="height: 17.5rem;">
+				<p id="main_btm"></p>
+			</div>
+	    </div>
 	</div>
     
 </body>
@@ -106,7 +121,9 @@
 		<input id="subteacher_area" placeholder="副担任"></input><br>
 		<textarea id="mini_area" cols="20" placeholder="プロローグ"></textarea>
 		<textarea id="mini_area2"cols="20" placeholder="エピローグ"></textarea>
-		<textarea id="main_area"cols="20" placeholder="本文"></textarea>
+		<textarea id="main_area1"cols="20" placeholder="本文1"></textarea>
+		<textarea id="main_area2"cols="20" placeholder="本文2"></textarea>
+		<textarea id="main_area3"cols="20" placeholder="本文3"></textarea>
 	</fieldset>
 		
 	
@@ -120,7 +137,9 @@
 		const 副担任 = document.querySelector("#副担任");
 		const mini = document.querySelector("#mini");
 		const mini2 = document.querySelector("#mini2");
-		const main = document.querySelector("#main","#main_middle","#main_btmS");
+		const main1 = document.querySelector("#main");
+		const main2 = document.querySelector("#main_middle");
+		const main3 = document.querySelector("#main_btm");
 
 
 		document.querySelector("#HR_area").addEventListener("input", (e) => {
@@ -144,8 +163,16 @@
 			mini2.innerHTML = e.target.value;
 		});
 
-		document.querySelector("#main_area").addEventListener("input", (e) => {
-			main.innerHTML = e.target.value;
+		document.querySelector("#main_area1").addEventListener("input", (e) => {
+			main1.innerHTML = e.target.value;
+		});
+
+		document.querySelector("#main_area2").addEventListener("input", (e) => {
+			main2.innerHTML = e.target.value;
+		});
+
+		document.querySelector("#main_area3").addEventListener("input", (e) => {
+			main3.innerHTML = e.target.value;
 			console.log(e.target.value)
 		});
 	}

@@ -17,8 +17,20 @@ html{
 }
 
 #main_middle{
-    width: 0ex;
-    margin-bottom: ex;
+    position: absolute;
+    font-size: 0.76rem;
+    height: 15.5rem;
+    top: 18rem;
+    right: 5%;
+    z-index: 50;
+}
+#main_btm{
+    position: absolute;
+    font-size: 0.76rem;
+    height: 15.5rem;
+    top: 30rem;
+    right: 5%;
+    z-index: 50;
 }
 .num {
 	-ms-text-combine-horizontal: all;
@@ -63,19 +75,19 @@ body{
 #title{
     position: absolute;
     margin-left: 417px;
-    margin-top: 7%;
+    top: 57.5px;
     z-index: 1;
   }
 
 .text-2xl{
-    font-size:1.5rem;
+    font-size:1.3rem;
     letter-spacing: 0px;
     line-height:2rem;
 }
     
 .ml-115{ 
     position: absolute;
-    top:26.5%; 
+    top:25%; 
     right: 51%;
     z-index: 100;
     
@@ -89,7 +101,7 @@ color:rgb(14, 15, 15);}
 /*form*/
 #formspace{
     position: relative;
-    top: 30px;
+    top: 160px;
     margin: 60px auto;
     
 }
@@ -131,10 +143,26 @@ color:rgb(14, 15, 15);}
     height: 19rem;
 
 }
-#main_area{
+#main_area1{
     position:absolute;
-    height: 43rem;
+    height: 11.5rem;
     top: 15%;
+    left:23rem;
+    margin-right: 50px;
+
+}
+#main_area2{
+    position:absolute;
+    height: 14rem;
+    top: 40%;
+    left:23rem;
+    margin-right: 50px;
+
+}
+#main_area3{
+    position:absolute;
+    height: 14rem;
+    top: 70%;
     left:23rem;
     margin-right: 50px;
 
@@ -149,23 +177,28 @@ color:rgb(14, 15, 15);}
     bottom:0%;
     background-color: white;
 }
-#mini_area,#mini_area2,#main_area{
+#mini_area,#mini_area2,#main_area1,#main_area2,#main_area3{
     width: 38%;
 }
 
 #mini{
     position: absolute;
-    top:20%
+    top:20%;
+    font-size: 0.76rem;
+    top: 2rem;
+    right: 20%;
 }
 #担任{
+    font-size: 0.2rem;
     position: absolute;
-    top:57%;
+    top:56%;
     right: 52.5%;
     z-index: 70;
 }
 #副担任{
+    font-size: 0.2rem;
     position:absolute;
-    top:57%;
+    top:56%;
     right: 22.3%;
     z-index: 70;
 }
