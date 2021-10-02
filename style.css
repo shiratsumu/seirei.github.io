@@ -9,7 +9,7 @@ html{
 /*縦書き文字設定*/
 #main{
     position: absolute;
-    font-size: 59.1%;
+    font-size: 59.5%;
     height: 26.2%;
     top: 7.8%;
     right: 18%;
@@ -102,7 +102,7 @@ color:rgb(14, 15, 15);}
 #formspace{
     position: relative;
     top: 160px;
-    margin: 60px auto;
+    margin: 90% auto;
     
 }
 #formspace fieldset{
