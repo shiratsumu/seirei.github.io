@@ -9,7 +9,7 @@ html{
 /*縦書き文字設定*/
 #main{
     position: absolute;
-    font-size: 59.3%;
+    font-size: 59.35%;
     height: 12.5rem;
     letter-spacing: 1%;
     top: 3.5rem;
@@ -67,7 +67,7 @@ h1{text-decoration:underline;
 
 /*window背景色*/
 body{
-    background-color: rgb(175, 15, 224);
+    background-color: rgb(233, 165, 253);
 }
 /*配置設定*/
 #template{
