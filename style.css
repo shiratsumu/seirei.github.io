@@ -189,14 +189,14 @@ color:rgb(14, 15, 15);}
     right: 20%;
 }
 #担任{
-    font-size: 0.2rem;
+    font-size: 20%;
     position: absolute;
     top:56%;
     right: 52.5%;
     z-index: 70;
 }
 #副担任{
-    font-size: 0.2rem;
+    font-size: 3%;
     position:absolute;
     top:56%;
     right: 22.3%;
