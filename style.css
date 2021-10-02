@@ -8,11 +8,10 @@ html{
 }
 /*縦書き文字設定*/
 #main{
-    width: 40ex;
-    margin-top: 10%;
+    font-size: 0.76rem;
+    margin-top: 9.7%;
     margin-right: 41%;
-    z-index: 50;
-    
+    z-index: 50;   
 }
 #main_middle{
     width: 0ex;
@@ -115,7 +114,7 @@ color:rgb(14, 15, 15);}
     top: 7%;
 }
 #mini_area,#mini_area2,#main_area{
-    width: 18rem;
+    width: 17rem;
 }
 #mini_area{
     position:absolute;
