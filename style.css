@@ -73,7 +73,7 @@ body{
 .ml-115{ 
     position: absolute;
     top:26.5%; 
-    right: 52%;
+    right: 51%;
     z-index: 100;
     
 }
@@ -137,6 +137,7 @@ color:rgb(14, 15, 15);}
 
 }
 #toPDF{
+    float: none;
     line-height: 1;
     height:3rem;
     width: 5rem;
