@@ -16,7 +16,6 @@
 	    text-orientation: upright;
   		writing-mode: vertical-rl;
   		display: inline-block;
-  		text-align:right;
 		font-size: 75.3%;
 		
 	}
@@ -25,12 +24,12 @@
  <h1>
 	蜻蛉打ち込み用Web
  </h1>
- <a>不具合等の連絡→<p><a href="mailto:seireicommittee@gmail.com">seireicommittee@gmail.com</a></p>
- <p>
-	レイアウト選択</p>
- <ul id=jamp></ul>
-	<li ><a href="layout/HR2.html">HR紹介Ⅰ</a></li>
-	<li ><a href="layout/HR2.html">HR紹介Ⅱ</a></li>
+ <a>不具合等の連絡→<p><a href="mailto:seireicommittee@gmail.com">seireicommittee@gmail.com</a></p></a>
+ 
+ <ul id="jamp">
+	<p id="jampp"><strong>レイアウト選択</strong></p>
+	<li><a href="layout/HR2.html">HR紹介Ⅰ</a></li>
+	<li><a href="layout/HR2.html">HR紹介Ⅱ</a></li>
 	<li><a  href="layout/gyouzi.html">行事用</a></li>
 	<li><a href="layout/bukatsu.html">委員会,部活用</a></li>
 	<li><a href="layout/free.html">自由レイアウト</a></li>
@@ -59,7 +58,7 @@
 		</div>
 		<div id="mini"></div>
 
-		<div style="text-align: right;">
+	<div style="text-align: right;">
 			<div class="tategaki">
 				<div style="height: 42ex;">
 					<p id="main"></p>
@@ -73,20 +72,21 @@
 </body>
 
 <h2 style="background:rgb(245, 249, 253); 
-           width: 720px; 
-           height: 850px;"
+           width: 740px; 
+           height: 890px;"
 	id="formspace">
 	
 
 
-	<div>
+	<fieldset>
+	　　<legend>入力欄</legend>
 		<input id="HR_area" placeholder="HR"></input><br>
 		<input id="teacher_area" placeholder="担任"></input><br>
 		<input id="subteacher_area" placeholder="副担任"></input><br>
 		<textarea id="mini_area" placeholder="プロローグ"></textarea>
 		<textarea id="mini_area2" placeholder="エピローグ"></textarea>
 		<textarea id="main_area" placeholder="本文"></textarea>
-	</div>
+	</fieldset>
 		
 	<button id="toPDF">PDFにする</button>
 </h2>

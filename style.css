@@ -1,4 +1,7 @@
 @charset "utf-8";
+*{
+    font-family: serif;}
+
 /*文字変更禁止*/
 html{
     -webkit-text-size-adjust: 100%;
@@ -23,12 +26,33 @@ html{
 	vertical-align: baseline;
 }
 /*ヘッダー配置*/
-#ヘッダー
+#ヘッダー h1{
+    font-size: 2rem;
+}
+#ヘッダー p,a{
+    font-size: 1.2rem;
+    margin:0;
+}
+
+
+#jump{
+    margin:0;
+}
+#jump li{
+    left: 3em;
+}
 h1{text-decoration:underline;
    margin: 10px 2px;}
+#jampp{
+    position: relative;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    left: -2%;
+}
+
 /*window背景色*/
 body{
-    background-color: rgb(193, 226, 255);
+    background-color: rgb(207, 252, 244);
 }
 /*配置設定*/
 #template{
@@ -56,17 +80,22 @@ body{
 }
 /*ul*/
 #jamp{
-    color-adjust: white;
-}
-a p,li{text-decoration:underline;
 color:rgb(14, 15, 15);}
+
 
 
 /*form*/
 #formspace{
     position: relative;
-    margin: 0px auto;
+    top: 30px;
+    margin: 60px auto;
     
+}
+#formspace fieldset{
+    position:relative;
+    width: 680px;
+    height:850px;
+    left: 1%;
 }
 #HR_area{
     position: absolute;
@@ -105,7 +134,7 @@ color:rgb(14, 15, 15);}
 #main_area{
     position:absolute;
     height: 43rem;
-    top: 108.5px;
+    top: 15%;
     left:23rem;
     margin-right: 50px;
 
@@ -115,7 +144,7 @@ color:rgb(14, 15, 15);}
     height:3rem;
     width: 6rem;
     position:absolute;
-    left: 700px;
-    bottom:850px;
+    left: 90%;
+    bottom:110%;
     background-color: white;
 }
