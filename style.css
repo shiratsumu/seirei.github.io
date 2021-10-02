@@ -9,11 +9,11 @@ html{
 /*縦書き文字設定*/
 #main{
     position: absolute;
-    font-size: 59.4%;
+    font-size: 59.3%;
     height: 12.5rem;
     letter-spacing: 1%;
     top: 3.5rem;
-    right: 18%;
+    right: 19%;
     z-index: 50;
 }
 
@@ -67,7 +67,7 @@ h1{text-decoration:underline;
 
 /*window背景色*/
 body{
-    background-color: rgb(15, 99, 224);
+    background-color: rgb(175, 15, 224);
 }
 /*配置設定*/
 #template{
