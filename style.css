@@ -9,9 +9,9 @@ html{
 /*縦書き文字設定*/
 #main{
     position: absolute;
-    font-size: 60%;
-    height: 15.5rem;
-    top: 2rem;
+    font-size: 56%;
+    height: 27.2%;
+    top: 8%;
     right: 18%;
     z-index: 50;
 }
