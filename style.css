@@ -157,9 +157,11 @@ color:rgb(14, 15, 15);}
     position: absolute;
     top:57%;
     right: 52.5%;
+    z-index: 70;
 }
 #副担任{
     position:absolute;
     top:57%;
     right: 22.3%;
+    z-index: 70;
 }
