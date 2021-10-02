@@ -8,11 +8,14 @@ html{
 }
 /*縦書き文字設定*/
 #main{
+    position: absolute;
     font-size: 0.76rem;
-    margin-top: 2rem;
-    margin-right: 41%;
-    z-index: 50;   
+    height: 15.5rem;
+    top: 2rem;
+    right: 18%;
+    z-index: 50;
 }
+
 #main_middle{
     width: 0ex;
     margin-bottom: ex;
@@ -151,7 +154,7 @@ color:rgb(14, 15, 15);}
 }
 
 #mini{
-    position: relative;
+    position: absolute;
     top:20%
 }
 #担任{
