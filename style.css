@@ -92,8 +92,8 @@ color:rgb(14, 15, 15);}
 }
 #formspace fieldset{
     position:relative;
-    width: 680px;
-    height:850px;
+    width: 92%;
+    height:96%;
     left: 1%;
 }
 #HR_area{
