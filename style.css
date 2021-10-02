@@ -110,7 +110,7 @@ color:rgb(14, 15, 15);}
 }
 #subteacher_area{
     position:absolute;
-    left:35%;
+    left:30%;
     top: 7%;
 }
 
@@ -123,7 +123,7 @@ color:rgb(14, 15, 15);}
 }
 #mini_area2{
     position:absolute;
-    margin-top: 24rem;
+    margin-top: 54%;
     left:50px;
     height: 19rem;
 
@@ -139,10 +139,10 @@ color:rgb(14, 15, 15);}
 #toPDF{
     line-height: 1;
     height:3rem;
-    width: 6rem;
+    width: 5rem;
     position:absolute;
-    left: 90%;
-    bottom:110%;
+    left: 70%;
+    bottom:114%;
     background-color: white;
 }
 #mini_area,#mini_area2,#main_area{
