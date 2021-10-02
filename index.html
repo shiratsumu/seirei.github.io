@@ -49,13 +49,35 @@
 		 id="main1" 
 	     width="74"
 	     height="240" >
-		 
-	
 		 <div class="ml-115 text-2xl">
 			<span id="HR"></span>
-		 </div>
+		 </div> 
+		   <div class="tategaki"
+		　       style="height: 6rem;"
+				 id="担任">
+		   </div>
+			 
+		   <div class="tategaki"
+	　          style="height: 6rem;"
+	　          id="副担任">
+		   </div>
 		</div>
-		<div id="mini"></div>
+
+	
+		
+		<div id="mini"
+		    class="tategaki"
+			style=height:17.5rem;>
+	    </div>
+		<div id="mini2"
+		    class="tategaki"
+			style=height:17.5rem;>
+	    </div>
+
+
+	<button id="toPDF">PDFにする</button>
+
+
 
 	<div style="text-align: right;">
 			<div class="tategaki">
@@ -67,7 +89,7 @@
 			</div>
 		</div>
 	</div>
-
+    
 </body>
 
 <h2 style="background:rgb(245, 249, 253); 
@@ -87,7 +109,7 @@
 		<textarea id="main_area"cols="20" placeholder="本文"></textarea>
 	</fieldset>
 		
-	<button id="toPDF">PDFにする</button>
+	
 </h2>
 <script>
 {"use strict";
@@ -98,7 +120,7 @@
 		const 副担任 = document.querySelector("#副担任");
 		const mini = document.querySelector("#mini");
 		const mini2 = document.querySelector("#mini2");
-		const main = document.querySelector("#main");
+		const main = document.querySelector("#main","#main_middle","#main_btmS");
 
 
 		document.querySelector("#HR_area").addEventListener("input", (e) => {

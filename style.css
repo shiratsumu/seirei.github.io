@@ -73,7 +73,7 @@ body{
 .ml-115{ 
     position: absolute;
     top:26.5%; 
-    right: 50%;
+    right: 52%;
     z-index: 100;
     
 }
@@ -123,7 +123,7 @@ color:rgb(14, 15, 15);}
 }
 #mini_area2{
     position:absolute;
-    margin-top: 54%;
+    top: 60.5%;
     left:50px;
     height: 19rem;
 
@@ -141,10 +141,25 @@ color:rgb(14, 15, 15);}
     height:3rem;
     width: 5rem;
     position:absolute;
-    left: 70%;
-    bottom:114%;
+    left: 105%;
+    bottom:0%;
     background-color: white;
 }
 #mini_area,#mini_area2,#main_area{
     width: 38%;
+}
+
+#mini{
+    position: relative;
+    top:20%
+}
+#担任{
+    position: absolute;
+    top:57%;
+    right: 52.5%;
+}
+#副担任{
+    position:absolute;
+    top:57%;
+    right: 22.3%;
 }
