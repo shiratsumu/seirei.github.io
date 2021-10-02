@@ -29,7 +29,7 @@ html{
     position: absolute;
     font-size: 59.4%;
     height: 12.5rem;
-    top: 29rem;
+    top: 31rem;
     right: 5%;
     z-index: 50;
 }
@@ -67,7 +67,7 @@ h1{text-decoration:underline;
 
 /*window背景色*/
 body{
-    background-color: rgb(255, 249, 198);
+    background-color: rgb(252, 242, 151);
 }
 /*配置設定*/
 #template{
