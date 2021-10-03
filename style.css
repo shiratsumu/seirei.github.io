@@ -228,10 +228,9 @@ color:rgb(14, 15, 15);}
 #formspace{
     position: relative;
     top: 160px;
-    margin: auto -10%;
+    margin: auto -15%;
     margin-top: 120%;
-    margin-bottom: 50%;    
-    width: 80%;    
+    margin-bottom: 50%;        
 }
 }
     
