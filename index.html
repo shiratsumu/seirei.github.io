@@ -75,7 +75,7 @@
 	    </div>
 		
 
-	<button id="toPDF">PDFにする</button>
+	<input id="toPDF" type="submit" value="PDFにする"></input>
 
   
 
@@ -104,19 +104,21 @@
 	id="formspace">
 	
 
-
+	<form action ="https://docs.google.com/spreadsheets/d/e/2PACX-1vQzkeeRLmQkfSjI7tXMAsfUwL94sx9cMBq6otMapL4fnzojPfH3PixWNzaM7DrnhUkXPHTHYi_0fsWi/pubhtml" method = “POST”>
 	<fieldset>
-	　　<legend>入力欄</legend>
-		<input id="HR_area" placeholder="HR"></input><br>
-		<input id="teacher_area" placeholder="担任"></input><br>
-		<input id="subteacher_area" placeholder="副担任"></input><br>
-		<textarea id="mini_area" cols="20"wrap="soft" placeholder="プロローグ"></textarea>
-		<textarea id="mini_area2"cols="20" wrap="soft" placeholder="エピローグ"></textarea>
-		<textarea id="main_area1"cols="20" wrap="soft" maxlength="420/" placeholder="本文1"></textarea>
-		<textarea id="main_area2"cols="20" wrap="soft" maxlength="500/"placeholder="本文2"></textarea>
-		<textarea id="main_area3"cols="20" wrap="soft" maxlength="500/"placeholder="本文3"></textarea>
-	</fieldset>
 		
+	　　 <legend>入力欄</legend>
+		 <input name="hr" id="HR_area" placeholder="HR*" required ></input><br>
+		 <input name="te" id="teacher_area" placeholder="担任*" required ></input><br>
+		 <input name="subte" id="subteacher_area" placeholder="副担任*" required ></input><br>
+		 <textarea name="pro" id="mini_area" cols="20"wrap="soft" placeholder="プロローグ"></textarea>
+		 <textarea name="epi" id="mini_area2"cols="20" wrap="soft" placeholder="エピローグ"></textarea>
+		 <textarea name="ma1" id="main_area1"cols="20" wrap="soft" maxlength="420/" placeholder="本文1"></textarea>
+		 <textarea name="ma2" id="main_area2"cols="20" wrap="soft" maxlength="500/"placeholder="本文2"></textarea>
+		 <textarea name="ma3" id="main_area3"cols="20" wrap="soft" maxlength="500/"placeholder="本文3"></textarea>
+	   
+	</fieldset>
+	</form>	
 	
 </h2>
 <script>
