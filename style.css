@@ -69,7 +69,7 @@ h1{text-decoration:underline;
 
 /*window背景色*/
 body{
-    background-color: rgb(119, 39, 36);
+    background-color: rgb(121, 103, 103);
 }
 /*配置設定*/
 #template{
@@ -228,9 +228,10 @@ color:rgb(14, 15, 15);}
 #formspace{
     position: relative;
     top: 160px;
-    margin: auto 25%;
+    margin: auto -10%;
     margin-top: 120%;
-    margin-bottom: 50%;        
+    margin-bottom: 50%;    
+    width: 80%;    
 }
 }
     
