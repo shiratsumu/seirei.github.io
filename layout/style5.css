@@ -190,8 +190,8 @@ color:rgb(14, 15, 15);}
     margin-bottom: 50%;
     width: 690px;       
 }
-#mini_area,#mini_area2,#main_area1,#main_area2,#main_area3{
-    width: 33%;
+#main_area1,#main_area2{
+    width: 51%;
 }
 
 }
