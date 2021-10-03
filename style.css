@@ -105,10 +105,10 @@ color:rgb(14, 15, 15);}
 #formspace{
     position: relative;
     top: 160px;
-    margin: auto auto;
+    margin: auto -13%;
     margin-top: 120%;
-    margin-bottom: 90%;
-    margin-left: -20%;
+    margin-bottom: 50%;
+  
     
 }
 #formspace fieldset{
@@ -179,7 +179,7 @@ color:rgb(14, 15, 15);}
     height:3rem;
     width: 5rem;
     position:absolute;
-    left: 105%;
+    left: 102%;
     bottom:0%;
     background-color: white;
 }
