@@ -1,12 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style2.css"media="all">
+	<title>seirei</title>
 </head>
+<style>
+	.tategaki {
+		-webkit-writing-mode: vertical-rl;
+  		-moz-writing-mode: vertical-rl;
+  		-ms-writing-mode: tb-rl;
+  		-ms-writing-mode: vertical-rl;
+	    text-orientation: upright;
+  		writing-mode: vertical-rl;
+  		display: inline-block;
+		text-combine-upright: digits 2;
+	}
+</style>
+<section id="ヘッダー">
+ <h1>
+	蜻蛉打ち込み用Web
+ </h1>
+ <a>不具合等の連絡→<p><a href="mailto:seireicommittee@gmail.com">seireicommittee@gmail.com</a></p></a>
+ 
+ <ul id="jamp">
+	<p id="jampp"><strong>レイアウト選択</strong></p>
+	<li><a href="layout/HR1.html">HR紹介Ⅰ</a></li>
+	<li><a href="layout/HR2.html">HR紹介Ⅱ</a></li>
+	<li><a  href="layout/gyouzi.html">行事用</a></li>
+	<li><a href="layout/bukatsu.html">委員会,部活用</a></li>
+	<li><a href="layout/free.html">自由レイアウト</a></li>
+ </ul>
+</section>
 <body>
+	
+	<div style="background:rgb(248, 248, 248); 
+	            width: 526px; 
+				height: 743px;
+				border:1px solid #000000;
+				margin:auto 25%;
+				margin-bottom: 6%;" 
+			id="template"
+	    >
+		<div id="title">
+	     <img src="image/Seivei.png"
+		 id="main1" 
+	     width="62px"
+	     height="192px" >
+		 <div class="ml-115 text-2xl">
+			<span id="HR"></span>
+		 </div> 
+		   <div class="tategaki"
+		　       style="height: 6rem;"
+				 id="担任">
+		   </div>
+			 
+		   <div class="tategaki"
+	　          style="height: 6rem;"
+	　          id="副担任">
+		   </div>
+		</div>
+
+	
+		
+		<div id="mini"
+		    class="tategaki"
+	    >
+	    </div>
+		<div id="mini2"
+		    class="tategaki"
+		>
+	    </div>
+		
+
+	<button id="toPDF">PDFにする</button>
+
+  
+
+	<div>
+		<div class="tategaki">
+				<div style="height: 30%;">
+					<p id="main"></p>
+				</div>
+		</div>
+		<div class="tategaki">
+			<div style="height: 10;">				
+				<p id="main_middle"></p>				
+			</div>
+	    </div>
+		<div class="tategaki">
+			<div style="height: 10;">
+				<p id="main_btm"></p>
+			</div>
+	    </div>
+	</div>
     
 </body>
+
+<h2 style="background:rgb(245, 249, 253); 
+           width: 730px; 
+           height: 910px;"
+	id="formspace">
+	
+
+
+	<fieldset>
+	　　<legend>入力欄</legend>
+		<input id="HR_area" placeholder="HR"></input><br>
+		<input id="teacher_area" placeholder="担任"></input><br>
+		<input id="subteacher_area" placeholder="副担任"></input><br>
+		<textarea id="mini_area" cols="20" placeholder="プロローグ"></textarea>
+		<textarea id="mini_area2"cols="20" placeholder="エピローグ"></textarea>
+		<textarea id="main_area1"cols="20" placeholder="本文1"></textarea>
+		<textarea id="main_area2"cols="20" placeholder="本文2"></textarea>
+		<textarea id="main_area3"cols="20" placeholder="本文3"></textarea>
+	</fieldset>
+		
+	
+</h2>
+<script>
+{"use strict";
+	{
+
+		const HR = document.querySelector("#HR");
+		const 担任 = document.querySelector("#担任");
+		const 副担任 = document.querySelector("#副担任");
+		const mini = document.querySelector("#mini");
+		const mini2 = document.querySelector("#mini2");
+		const main1 = document.querySelector("#main");
+		const main2 = document.querySelector("#main_middle");
+		const main3 = document.querySelector("#main_btm");
+
+
+		document.querySelector("#HR_area").addEventListener("input", (e) => {
+			HR.innerHTML = e.target.value;
+		});
+		
+		document.querySelector("#teacher_area").addEventListener("input", (e) => {
+			担任.innerHTML = e.target.value;
+		});
+		
+		document.querySelector("#subteacher_area").addEventListener("input", (e) => {
+			副担任.innerHTML = e.target.value;
+		});
+
+
+		document.querySelector("#mini_area").addEventListener("input", (e) => {
+			mini.innerHTML = e.target.value;
+		});
+
+		document.querySelector("#mini_area2").addEventListener("input", (e) => {
+			mini2.innerHTML = e.target.value;
+		});
+
+		document.querySelector("#main_area1").addEventListener("input", (e) => {
+			main1.innerHTML = e.target.value;
+		});
+
+		document.querySelector("#main_area2").addEventListener("input", (e) => {
+			main2.innerHTML = e.target.value;
+		});
+
+		document.querySelector("#main_area3").addEventListener("input", (e) => {
+			main3.innerHTML = e.target.value;
+			console.log(e.target.value)
+		});
+	}
+
+	
+}
+</script>
 </html>
+© 2021 GitHub, Inc.shiratsumu
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
