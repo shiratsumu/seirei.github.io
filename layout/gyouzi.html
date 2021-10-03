@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css"media="all">
+	<link rel="stylesheet" href="style4.css"media="all">
 	<title>seirei</title>
 </head>
 <style>
@@ -27,11 +27,11 @@
  
  <ul id="jamp">
 	<p id="jampp"><strong>レイアウト選択</strong></p>
-	<li><a href="layout/HR1.html">HR紹介Ⅰ</a></li>
-	<li><a href="layout/HR2.html">HR紹介Ⅱ</a></li>
-	<li><a  href="layout/gyouzi.html">行事用</a></li>
-	<li><a href="layout/bukatsu.html">委員会,部活用</a></li>
-	<li><a href="layout/free.html">自由レイアウト</a></li>
+	<li><a href="HR1.html">HR紹介Ⅰ</a></li>
+	<li><a href="HR2.html">HR紹介Ⅱ</a></li>
+	<li><a  href="gyouzi.html">行事用</a></li>
+	<li><a href="bukatsu.html">委員会,部活用</a></li>
+	<li><a href="free.html">自由レイアウト</a></li>
  </ul>
 </section>
 <body>
@@ -45,39 +45,34 @@
 			id="template"
 	    >
 		<div id="title">
-	     <img src="image/Seivei.png"
+	     <img src="something.png"
 		 id="main1" 
 	     width="62px"
-	     height="192px" >
-		 <div class="ml-115 text-2xl">
-			<span id="HR"></span>
-		 </div> 
+	     height="300px" >
+		 <img src="something.png"
+		 id="title2" 
+	     width="62px"
+	     height="300px" >
+		
 		   <div class="tategaki"
-		　       style="height: 6rem;"
+		　       style="height: 50rem;"
 				 id="担任">
 		   </div>
-			 
 		   <div class="tategaki"
-	　          style="height: 6rem;"
-	　          id="副担任">
-		   </div>
+		   　       style="height: 50rem;"
+					id="担任2">
+			  </div> 
+		   
 		</div>
 
 	
 		
-		<div id="mini"
-		    class="tategaki"
-	    >
-	    </div>
-		<div id="mini2"
-		    class="tategaki"
-		>
-	    </div>
+		
 		
 
-	<button id="toPDF">PDFにする</button>
-
-  
+	<form id="aaa"   action ="result.html" method="POST">
+		<input id="toPDF" type="submit" value="PDFにする"></input>
+	</form>
 
 	<div>
 		<div class="tategaki">
@@ -90,70 +85,55 @@
 				<p id="main_middle"></p>				
 			</div>
 	    </div>
-		<div class="tategaki">
-			<div style="height: 10;">
-				<p id="main_btm"></p>
-			</div>
-	    </div>
+		
 	</div>
     
 </body>
 
-<h2 style="background:rgb(245, 249, 253); 
-           width: 730px; 
+<h2 style="background:rgb(245, 249, 253);  
            height: 910px;"
 	id="formspace">
 	
-
-
-	<fieldset>
-	　　<legend>入力欄</legend>
-		<input id="HR_area" placeholder="HR"></input><br>
-		<input id="teacher_area" placeholder="担任"></input><br>
-		<input id="subteacher_area" placeholder="副担任"></input><br>
-		<textarea id="mini_area" cols="20" placeholder="プロローグ"></textarea>
-		<textarea id="mini_area2"cols="20" placeholder="エピローグ"></textarea>
-		<textarea id="main_area1"cols="20" placeholder="本文1"></textarea>
-		<textarea id="main_area2"cols="20" placeholder="本文2"></textarea>
-		<textarea id="main_area3"cols="20" placeholder="本文3"></textarea>
-	</fieldset>
+	 
+	
+		<fieldset form="aaa" id=field>
+	　　 <legend>入力欄</legend>
 		
+		 <input name="te" id="teacher_area" placeholder="タイトル*" required ></input><br>
+	     <input name="te2" id="teacher_area2" placeholder="タイトル2*" required ></input><br>
+		 
+		 <textarea name="ma1" id="main_area1"cols="30" wrap="soft" maxlength="630/" placeholder="本文1"></textarea>
+		 <textarea name="ma2" id="main_area2"cols="30" wrap="soft" maxlength="630/"placeholder="本文2"></textarea>
+		 
+		 
+		</fieldset>
+	
 	
 </h2>
 <script>
 {"use strict";
 	{
 
-		const HR = document.querySelector("#HR");
+		
 		const 担任 = document.querySelector("#担任");
-		const 副担任 = document.querySelector("#副担任");
-		const mini = document.querySelector("#mini");
-		const mini2 = document.querySelector("#mini2");
+		const 担任2 = document.querySelector("#担任2");
+		
 		const main1 = document.querySelector("#main");
 		const main2 = document.querySelector("#main_middle");
-		const main3 = document.querySelector("#main_btm");
+		
 
-
-		document.querySelector("#HR_area").addEventListener("input", (e) => {
-			HR.innerHTML = e.target.value;
-		});
+	
 		
 		document.querySelector("#teacher_area").addEventListener("input", (e) => {
 			担任.innerHTML = e.target.value;
 		});
+		document.querySelector("#teacher_area2").addEventListener("input", (e) => {
+			担任2.innerHTML = e.target.value;
+		});
 		
-		document.querySelector("#subteacher_area").addEventListener("input", (e) => {
-			副担任.innerHTML = e.target.value;
-		});
+	
 
-
-		document.querySelector("#mini_area").addEventListener("input", (e) => {
-			mini.innerHTML = e.target.value;
-		});
-
-		document.querySelector("#mini_area2").addEventListener("input", (e) => {
-			mini2.innerHTML = e.target.value;
-		});
+	
 
 		document.querySelector("#main_area1").addEventListener("input", (e) => {
 			main1.innerHTML = e.target.value;
@@ -161,11 +141,7 @@
 
 		document.querySelector("#main_area2").addEventListener("input", (e) => {
 			main2.innerHTML = e.target.value;
-		});
-
-		document.querySelector("#main_area3").addEventListener("input", (e) => {
-			main3.innerHTML = e.target.value;
-			console.log(e.target.value)
+		    console.log(e.target.value)
 		});
 	}
 
