@@ -190,11 +190,12 @@ color:rgb(14, 15, 15);}
 
 #mini{
     position: absolute;
-    font-size: 59.4%;
+    font-size: 29.7%;
     height: 12.5rem;
     letter-spacing: 1%;
+    line-height:59.5%;
     top: 3.4rem;
-    right: 21%;
+    right: 19.5%;
     z-index: 50;
 }
 #mini2{
