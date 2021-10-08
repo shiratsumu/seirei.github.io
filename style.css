@@ -192,10 +192,10 @@ color:rgb(14, 15, 15);}
     position: absolute;
     font-size: 29.7%;
     height: 12.5rem;
-    letter-spacing: 1%;
-    line-height:325%;
+    letter-spacing: 1.5%;
+    line-height:327%;
     top: 3.4rem;
-    right: 20%;
+    right: 19.5%;
     z-index: 70;
 }
 #mini2{
