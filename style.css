@@ -1,3 +1,4 @@
+
 @charset "utf-8";
 *{
     font-family: serif;}
@@ -139,15 +140,24 @@ color:rgb(14, 15, 15);}
 #mini_area{
     position:absolute;
     top: 15%;
-    height: 20rem;
+    height: 11.5rem;
     float: left;
     left: 7%;
 }
 #mini_area2{
+
     position:absolute;
-    top: 60.5%;
+    top: 40%;
     left:50px;
-    height: 19rem;
+    height: 14rem;
+
+}
+#mini_area3{
+
+    position:absolute;
+    top: 70%;
+    left:50px;
+    height: 14rem;
 
 }
 #main_area1{
@@ -200,11 +210,20 @@ color:rgb(14, 15, 15);}
 }
 #mini2{
     position: absolute;
-    font-size: 59.4%;
+    font-size: 29.7%;
+    height: 12.5rem;
+    letter-spacing: 1%;
+    top: 17rem;
+    right: 8.5%;
+    z-index: 50;
+}
+#mini3{
+    position: absolute;
+    font-size: 29.7%;
     height: 12.5rem;
     letter-spacing: 1%;
     top: 31rem;
-    right: 9%;
+    right: 8.5%;
     z-index: 50;
 }
 #担任{
@@ -238,6 +257,35 @@ color:rgb(14, 15, 15);}
 #mini_area,#mini_area2,#main_area1,#main_area2,#main_area3{
     width: 33%;
 }
-
+#mini{
+    position: absolute;
+    font-size: 29.7%;
+    height: 12.5rem;
+    letter-spacing: 1.5%;
+    line-height:350%;
+    top: 3.4rem;
+    right: 19.5%;
+    z-index: 70;
+}
+#mini2{
+    position: absolute;
+    font-size: 29.7%;
+    height: 12.5rem;
+    letter-spacing: 1.5%;
+    line-height:350%;
+    top: 17rem;
+    right: 8.5%;
+    z-index: 70;
+}
+#mini3{
+    position: absolute;
+    font-size: 29.7%;
+    height: 12.5rem;
+    letter-spacing: 1.5%;
+    line-height:350%;
+    top: 31rem;
+    right: 8.5%;
+    z-index: 70;
+}
 }
     
