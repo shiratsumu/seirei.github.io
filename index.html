@@ -75,6 +75,10 @@
 		    class="tategaki"
 		>
 	    </div>
+                <div id="mini3"
+		    class="tategaki"
+		>
+	    </div>
 		
 
 	<form id="aaa"   action ="result.html" method="POST">
@@ -112,8 +116,9 @@
 		 <input name="hr" id="HR_area" placeholder="HR*" required ></input><br>
 		 <input name="te" id="teacher_area" placeholder="担任*" required ></input><br>
 		 <input name="subte" id="subteacher_area" placeholder="副担任*" required ></input><br>
-		 <textarea name="pro" id="mini_area" cols="20"wrap="soft" placeholder="ルビ（仮）"></textarea>
-		 <textarea name="epi" id="mini_area2"cols="20" wrap="soft" placeholder="エピローグ"></textarea>
+		 <textarea name="ruby1" id="mini_area" cols="40"wrap="soft" placeholder="ルビ1"></textarea>
+                 <textarea name="ruby2" id="mini_area2" cols="40"wrap="soft" placeholder="ルビ2"></textarea>
+		 <textarea name="ruby3" id="mini_area3"cols="40" wrap="soft" placeholder="ルビ3"></textarea>
 		 <textarea name="ma1" id="main_area1"cols="20" wrap="hard" maxlength="420/" placeholder="本文1"></textarea>
 		 <textarea name="ma2" id="main_area2"cols="20" wrap="soft" maxlength="500/"placeholder="本文2"></textarea>
 		 <textarea name="ma3" id="main_area3"cols="20" wrap="soft" maxlength="500/"placeholder="本文3"></textarea>
@@ -130,6 +135,7 @@
 		const 副担任 = document.querySelector("#副担任");
 		const mini = document.querySelector("#mini");
 		const mini2 = document.querySelector("#mini2");
+		const mini3 = document.querySelector("#mini3");
 		const main1 = document.querySelector("#main");
 		const main2 = document.querySelector("#main_middle");
 		const main3 = document.querySelector("#main_btm");
@@ -155,6 +161,10 @@
 		document.querySelector("#mini_area2").addEventListener("input", (e) => {
 			mini2.innerHTML = e.target.value;
 		});
+		
+		document.querySelector("#mini_area3").addEventListener("input", (e) => {
+			mini3.innerHTML = e.target.value;
+		});
 
 		document.querySelector("#main_area1").addEventListener("input", (e) => {
 			main1.innerHTML = e.target.value;
@@ -175,8 +185,8 @@
 </script>
 <a><strong>提出の流れ</strong></a><br>
 <a>1.クラス、担任、副担任、本文を必ず記入してください。<br>
-2.用紙画面のスクリーンショットを撮影して下さい。<br>
-3.入力画面の文字をまとめてコピーしてください。<br>
+2.用紙画面全体のスクリーンショットを撮影して下さい。<br>
+3.用紙画面全体の文字をまとめてコピーしてください。（タイトル含む）<br>
 4.提出のリンクを押すとGoogleフォームに飛びます。<br>
 スクリーンショットとコピーの提出案内に従って下さい。<br></a>
 <u>フォームリンク</u>🔗↓<br>
